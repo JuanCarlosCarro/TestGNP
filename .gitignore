@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Cypress reports, screenshots, and videos
+cypress/reports/
+cypress/screenshots/
+cypress/videos/
+
+# Build files
+build/
+app/build/
+.gradle/
+
+# Local environment variables
+.env
+local.properties
+
+# IntelliJ/Android Studio
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# Misc
+.DS_Store
