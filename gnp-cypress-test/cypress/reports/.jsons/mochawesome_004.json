@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-16T07:43:27.659Z",
+    "end": "2024-06-16T07:43:31.294Z",
+    "duration": 3635,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "762135c5-c141-47f2-89dd-973f484e65a3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\pages\\Agent\\TestAgentCPP.view.cy.js",
+      "file": "cypress\\e2e\\pages\\Agent\\TestAgentCPP.view.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "90ae687e-de4c-466e-b43a-07c64bd3b77c",
+          "title": "See CPP",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "28c6276c-feb1-4007-b149-aac36a1da2c9",
+              "title": "Verify Connect CPP modal elements are present and visible",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should open the Connect CPP modal when the chatbot button is clicked",
+                  "fullTitle": "See CPP Verify Connect CPP modal elements are present and visible should open the Connect CPP modal when the chatbot button is clicked",
+                  "timedOut": null,
+                  "duration": 2414,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// Verifica que el modal de Connect CPP esté presente y visible\ncy.get(\"#modalConnectCpp\").should(\"exist\").and(\"be.visible\");\n// Verifica el contenido del modal\ncy.get(\"#modalConnectCpp .modal-title\").contains(\"CONNECT CPP\").should(\"exist\").and(\"be.visible\");\ncy.get(\"#modalConnectCpp .btn-close\").should(\"exist\").and(\"be.visible\");\ncy.get(\"#modalConnectCpp .modal-body #ccp\").should(\"exist\").and(\"be.visible\");\ncy.get(\"#modalConnectCpp .modal-footer .btn.btn-secondary\").contains(\"Close\").should(\"exist\").and(\"be.visible\");",
+                  "err": {},
+                  "uuid": "0159896c-bcd1-4794-bb3a-6f077e2f19d1",
+                  "parentUUID": "28c6276c-feb1-4007-b149-aac36a1da2c9",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "0159896c-bcd1-4794-bb3a-6f077e2f19d1"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 2414,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

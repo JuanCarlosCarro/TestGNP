@@ -1,6 +1,5 @@
 describe("Login Agente", () => {
   const LocalUrl = Cypress.env("apiUrl");
-  const apiVerifyToken = `${Cypress.env("apiUrl")}/tools/verifyToken`;
   beforeEach(() => {
     cy.visit(Cypress.env("url"));
   });

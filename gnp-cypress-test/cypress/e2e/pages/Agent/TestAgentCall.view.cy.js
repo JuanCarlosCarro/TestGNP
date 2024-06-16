@@ -69,6 +69,12 @@ describe("View Agent Call", () => {
         .should("exist")
         .and("be.visible");
     });
+    it("should display the Call Supervisor button", () => {
+      cy.get("button.supervisorAgentCallButton")
+        .contains("Call Supervisor")
+        .should("exist")
+        .and("be.visible");
+    });
   });
 
   context(
@@ -112,20 +118,44 @@ describe("View Agent Call", () => {
   context("Verify service selection buttons are present and visible", () => {
     it("should display the Ambulance selection buttons", () => {
       cy.contains("p", "Ambulance:").should("exist").and("be.visible");
-      cy.get("button.yesButton").contains("Yes").should("exist").and("be.visible");
-      cy.get("button.noButton").contains("No").should("exist").and("be.visible");
+      cy.get("button.yesButton")
+        .contains("Yes")
+        .should("exist")
+        .and("be.visible");
+      cy.get("button.noButton")
+        .contains("No")
+        .should("exist")
+        .and("be.visible");
     });
-  
+
     it("should display the Crane selection buttons", () => {
       cy.contains("p", "Crane:").should("exist").and("be.visible");
-      cy.get("button.yesButton").contains("Yes").should("exist").and("be.visible");
-      cy.get("button.noButton").contains("No").should("exist").and("be.visible");
+      cy.get("button.yesButton")
+        .contains("Yes")
+        .should("exist")
+        .and("be.visible");
+      cy.get("button.noButton")
+        .contains("No")
+        .should("exist")
+        .and("be.visible");
     });
-  
+
     it("should display the Adjuster selection buttons", () => {
       cy.contains("p", "Adjuster:").should("exist").and("be.visible");
-      cy.get("button.yesButton").contains("Yes").should("exist").and("be.visible");
-      cy.get("button.noButton").contains("No").should("exist").and("be.visible");
+      cy.get("button.yesButton")
+        .contains("Yes")
+        .should("exist")
+        .and("be.visible");
+      cy.get("button.noButton")
+        .contains("No")
+        .should("exist")
+        .and("be.visible");
     });
-  });  
+  });
+  context("Verify Transcript section is present and visible", () => {
+    it("should display the Transcript container", () => {
+      cy.get("div.whiteBackgroundTranscript").should("exist").and("be.visible");
+      cy.contains("p", "Transcript:").should("exist").and("be.visible");
+    });
+  });
 });
