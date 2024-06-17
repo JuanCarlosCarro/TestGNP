@@ -1,7 +1,7 @@
 describe("View Agent My Profile", () => {
     beforeEach(() => {
       cy.visit(Cypress.env("url"));
-      cy.get('input[name="email"]').clear().type("correo@example.com");
+      cy.get('input[name="email"]').clear().type("a01753729@tec.mx");
       cy.get('input[name="password"]').clear().type("12345");
       cy.get(".btn.btn-custom.w-100").click();
       cy.get("a.nav-link").contains("My Profile").click();

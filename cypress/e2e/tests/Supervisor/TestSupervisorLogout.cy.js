@@ -1,7 +1,7 @@
 describe("Logout supervisor from 'My Profile' page", () => {
     beforeEach(() => {
       cy.visit(Cypress.env("url"));
-      cy.get('input[name="email"]').clear().type("adolfo1@supervisor.com");
+      cy.get('input[name="email"]').clear().type("eduardoramu@supervisor.com");
       cy.get('input[name="password"]').clear().type("12345");
       cy.get(".btn.btn-custom.w-100").click();
       cy.get("a.nav-link").contains("My Profile").click();

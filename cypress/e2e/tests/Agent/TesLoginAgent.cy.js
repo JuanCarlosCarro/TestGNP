@@ -45,7 +45,7 @@ describe("Login Agente", () => {
       const token = win.localStorage.getItem("token");
 
       // Verify redirection (optional, adapt URL based on supervisor redirection)
-      cy.url().should("include", "/agent/home"); // Change URL based on supervisor redirection
+      cy.url().should("include", "agent/home"); // Change URL based on supervisor redirection
     });
 
   });

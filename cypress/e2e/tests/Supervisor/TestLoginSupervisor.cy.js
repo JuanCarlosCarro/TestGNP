@@ -59,7 +59,7 @@ describe("Login Supervisor", () => {
       }
     );
 
-    cy.get('input[name="email"]').type("adolfo1@supervisor.com");
+    cy.get('input[name="email"]').clear().type("eduardoramu@supervisor.com");
     cy.get('input[name="password"]').type("12345");
     cy.get("button").contains("Login").click();
 
